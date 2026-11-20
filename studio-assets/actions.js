@@ -13,6 +13,14 @@ const actionCatalog = [
           800,
           500,
           400
+        ],
+        "frame_mapping": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
         ]
       }
     }
@@ -30,7 +38,8 @@ const actionCatalog = [
           200,
           400,
           500
-        ]
+        ],
+        "frame_mapping": null
       }
     }
   },
@@ -47,7 +56,8 @@ const actionCatalog = [
           120,
           500,
           600
-        ]
+        ],
+        "frame_mapping": null
       }
     }
   },
@@ -64,6 +74,13 @@ const actionCatalog = [
           200,
           600,
           300
+        ],
+        "frame_mapping": [
+          0,
+          1,
+          2,
+          3,
+          1
         ]
       },
       "6-1": {

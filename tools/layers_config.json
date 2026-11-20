@@ -1,0 +1,40 @@
+{
+  "expressions": {
+    "Ocean": [
+      {"key": "grimace-0", "label": "浅笑", "face": "default"},
+      {"key": "grimace-1", "label": "挑眉笑", "face": "default"},
+      {"key": "grimace-2", "label": "张嘴", "face": "default"},
+      {"key": "grimace-3", "label": "吐舌", "face": "default"},
+      {"key": "grimace-4", "label": "闭眼大笑", "face": "default"},
+      {"key": "ocean-hammer-1", "label": "咧嘴笑", "face": "default"},
+      {"key": "ocean-hammer-2", "label": "使劲笑", "face": "default"},
+      {"key": "ocean-hammer-3", "label": "开心张嘴", "face": "default"},
+      {"key": "ocean-hammer-4", "label": "眯眼微笑", "face": "default"}
+    ],
+    "Seeky": [
+      {"key": "hammer-0", "label": "平静", "face": "default"},
+      {"key": "hammer-1", "label": "抿嘴笑", "face": "default"},
+      {"key": "hammer-2", "label": "用力", "face": "default"},
+      {"key": "hammer-3", "label": "开心张嘴", "face": "default"},
+      {"key": "hammer-4", "label": "眯眼笑", "face": "default"},
+      {"key": "soft-0", "label": "认真", "face": "default"},
+      {"key": "soft-1", "label": "歪头微笑", "face": "default"},
+      {"key": "soft-2", "label": "轻笑", "face": "default"},
+      {"key": "soft-3", "label": "闭眼微笑", "face": "default"}
+    ]
+  },
+  "headwear": {
+    "1": {"name": "default-hair", "label": "默认发型"},
+    "2": {"name": "flower", "label": "簪花"},
+    "3": {"name": "animal-ears", "label": "动物耳朵"},
+    "4": {"name": "peach-hat", "label": "粉色蜜桃帽"}
+  },
+  "outfits": [
+    "粉色装",
+    "红衬衫",
+    "簪花套装",
+    "背带裤",
+    "粉衬衫",
+    "校服"
+  ]
+}
