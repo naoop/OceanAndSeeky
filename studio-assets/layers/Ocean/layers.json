@@ -1,0 +1,102 @@
+{
+  "character": "Ocean",
+  "canvas": [
+    364,
+    498
+  ],
+  "stack": [
+    "face",
+    "features",
+    "hair",
+    "headwear"
+  ],
+  "layers": {
+    "face": "face-default.png",
+    "hair": "hair.png",
+    "headwear": {
+      "default-hair": [],
+      "flower": ["headwear-ears.png", "headwear-flower.png"],
+      "animal-ears": ["headwear-ears.png"],
+      "peach-hat": ["headwear-ears.png", "headwear-peach-hat.png"]
+    }
+  },
+  "faceShapes": {
+    "default": "face-default.png"
+  },
+  "expressions": {
+    "default": {
+      "label": "默认",
+      "face": "face-default.png",
+      "features": "features-default.png"
+    },
+    "grimace-0": {
+      "label": "浅笑",
+      "face": "face-default.png",
+      "features": "features-grimace-0.png",
+      "sourcePrefix": "face-grimace-0"
+    },
+    "grimace-1": {
+      "label": "挑眉笑",
+      "face": "face-default.png",
+      "features": "features-grimace-1.png",
+      "sourcePrefix": "face-grimace-1"
+    },
+    "grimace-2": {
+      "label": "张嘴",
+      "face": "face-default.png",
+      "features": "features-grimace-2.png",
+      "sourcePrefix": "face-grimace-2"
+    },
+    "grimace-3": {
+      "label": "吐舌",
+      "face": "face-default.png",
+      "features": "features-grimace-3.png",
+      "sourcePrefix": "face-grimace-3"
+    },
+    "grimace-4": {
+      "label": "闭眼大笑",
+      "face": "face-default.png",
+      "features": "features-grimace-4.png",
+      "sourcePrefix": "face-grimace-4"
+    },
+    "ocean-hammer-1": {
+      "label": "咧嘴笑",
+      "face": "face-default.png",
+      "features": "features-ocean-hammer-1.png",
+      "sourcePrefix": "face-ocean-hammer-1"
+    },
+    "ocean-hammer-2": {
+      "label": "使劲笑",
+      "face": "face-default.png",
+      "features": "features-ocean-hammer-2.png",
+      "sourcePrefix": "face-ocean-hammer-2"
+    },
+    "ocean-hammer-3": {
+      "label": "开心张嘴",
+      "face": "face-default.png",
+      "features": "features-ocean-hammer-3.png",
+      "sourcePrefix": "face-ocean-hammer-3"
+    },
+    "ocean-hammer-4": {
+      "label": "眯眼微笑",
+      "face": "face-default.png",
+      "features": "features-ocean-hammer-4.png",
+      "sourcePrefix": "face-ocean-hammer-4"
+    }
+  },
+  "master": {
+    "canvas": [
+      1024,
+      1024
+    ],
+    "dir": "master/",
+    "toSprite": {
+      "scale": 0.29200000000000004,
+      "offset": [
+        28,
+        14
+      ],
+      "note": "sprite_xy = master_xy*scale + offset; downscale = palette-quantize then per-pixel majority colour (pixel-art friendly)"
+    }
+  }
+}

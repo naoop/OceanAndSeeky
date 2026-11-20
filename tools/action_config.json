@@ -1,0 +1,67 @@
+{
+  "actions": [
+    {
+      "key": "grimace",
+      "label": "做鬼脸",
+      "actor": "Ocean",
+      "source_path": "做鬼脸/grimace_Ocean.gif",
+      "use_png_frames": true,
+      "outfit": 4,
+      "hat": 3,
+      "durations": [500, 250, 200, 800, 500, 400]
+    },
+    {
+      "key": "ocean-hammer",
+      "label": "挥锤子",
+      "actor": "Ocean",
+      "source_path": "ocean_hammer/ocean_hammer.gif",
+      "use_png_frames": true,
+      "outfit": 4,
+      "hat": 3,
+      "durations": [400, 300, 200, 400, 500]
+    },
+    {
+      "key": "hammer",
+      "label": "挥锤子",
+      "actor": "Seeky",
+      "source_path": "挥锤子_第一版/hammer_seeky.gif",
+      "use_png_frames": true,
+      "outfit": 4,
+      "hat": 3,
+      "durations": [500, 350, 120, 500, 600]
+    },
+    {
+      "key": "soft",
+      "label": "轻挥小锤",
+      "actor": "Seeky",
+      "source_path": "轻挥小锤子_第二版/soft_hammer.gif",
+      "use_png_frames": true,
+      "outfit": 4,
+      "hat": 3,
+      "durations": [500, 500, 200, 600, 300],
+      "generate_school_variants": true
+    }
+  ],
+  "canvas_size": {
+    "width": 364,
+    "height": 498
+  },
+  "outfit_names": [
+    "粉色装",
+    "红衬衫",
+    "簪花套装",
+    "背带裤",
+    "粉衬衫",
+    "校服"
+  ],
+  "head_configs": {
+    "Ocean": {
+      "target_eye_left": [153, 191],
+      "target_eye_right": [206, 191]
+    },
+    "Seeky": {
+      "target_eye_left": [155, 194],
+      "target_eye_right": [211, 194]
+    }
+  }
+}
