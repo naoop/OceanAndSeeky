@@ -40,3 +40,27 @@ Ocean 和 Seeky 的默认造型（outfit 1），按 PSD 分层的方式拆出的
 3. features：腮红、眼下和眉下的柔和阴影，以及补画的眉尾，形状偏方块。Seeky 的眉毛上半部分是复制可见那一行补的，看起来像一整条横杠。
 4. hair-back 和 body：后发和下巴后面的脖子只是简单平涂，脖子顶端是平切的；Seeky 的兔耳根部是推测补画的；Seeky 的后发沿下颌有一条浅色描边（原图像素）。
 5. Ocean 后颈的碎发是手工挑的小块，形状比较生硬。
+
+## 五官部件（parts/，可自由组合）
+
+`<角色>/parts/` 里是可以独立替换的五官部件。每个部件都是 364×498 RGBA、透明背景，和其他图层同一画布、同一锚点，直接叠在 `face.png` 上就能对准。
+
+| 类别 | 文件 | 说明 |
+|------|------|------|
+| 眉毛 | `brows-default.png` / `brows-up.png` / `brows-down.png` | 默认 / 上扬（开心、得意：眉头抬高 3px，眉尾抬高 1px）/ 皱眉（生气：眉头压低 3px，眉尾抬高 1px） |
+| 眼睛 | `eyes-default.png` / `eyes-smile.png` / `eyes-closed.png` | 默认 / 笑眼（^ ^ 弧线）/ 闭眼（眨眼线，眼角有睫毛） |
+| 嘴巴 | `mouth-default.png` / `mouth-open-smile.png` / `mouth-o.png` | 默认 / 张嘴笑 / 小 o 嘴（惊讶）。Seeky 的三种嘴都是心形唇 |
+| 腮红 | `blush.png` | 单独一层，可以开关 |
+
+命名规则是 `<类别>-<变体>.png`，腮红只有 `blush.png`。同一类别的部件占同一块区域，替换起来位置不会跳。
+
+**叠放顺序（下 → 上）：** headwear-ears → body → hair-back → face → blush → eyes → brows → mouth → hair-front。使用部件时不再叠 `features.png`，它只作为默认五官的合并版保留。
+
+**默认部件 == 原图：**
+- `brows-default` + `eyes-default` + `mouth-default` + `blush` 正好把 `features.png` 拆开，并集和 `features.png` 逐像素一致，没有任何像素同时属于两个部件。
+- 用默认部件加腮红叠起来，和 `<角色>-1-3.png` 的差异是 0 像素（去掉兽耳后和 `-1-1.png` 的差异：Seeky 0 像素，Ocean 12 像素，原因同上）。
+- 柔和阴影的归属：眼睛下方的浅粉色（虹膜下缘以下、亮度较高的像素）归 `blush`；眼睛周围其余的柔和阴影、睫毛外的浅色描边归 `eyes`；眉毛下的柔和阴影归 `brows`。
+
+**这一版对 `face.png` / `features.png` 的改动：** 原图里眼睛、眉毛和嘴巴外面有一圈浅色或粉色的描边，原来留在 `face.png` 上，换掉五官后会露出旧五官的白边。现在把距离五官 3px 以内、颜色和肤色明显不同的像素（Ocean 271 个，Seeky 289 个）从 `face.png` 挪到了 `features.png`（也就是对应的默认部件里），`face.png` 那些位置改成平涂肤色。叠起来的结果不变，仍然和原图一致。
+
+**新画的变体：** 在原尺寸上逐像素画，颜色只用该角色原图里有的颜色，1px 硬边，没有半透明像素。眉毛的两个变体是把默认眉毛按列整体上下移动做出来的（没有缩放，像素和原眉毛一致）。
