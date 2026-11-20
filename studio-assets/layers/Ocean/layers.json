@@ -14,10 +14,10 @@
     "face": "face-default.png",
     "hair": "hair.png",
     "headwear": {
-      "default-hair": null,
-      "flower": "headwear-flower.png",
-      "animal-ears": "headwear-ears.png",
-      "peach-hat": "headwear-peach-hat.png"
+      "default-hair": [],
+      "flower": ["headwear-ears.png", "headwear-flower.png"],
+      "animal-ears": ["headwear-ears.png"],
+      "peach-hat": ["headwear-ears.png", "headwear-peach-hat.png"]
     }
   },
   "faceShapes": {

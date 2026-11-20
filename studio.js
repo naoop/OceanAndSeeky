@@ -105,12 +105,19 @@ function compositeCharacter(character, outfit, hat, expression) {
     layers.push({ type: 'hair', src: basePath + config.layers.hair });
   }
   
-  // 5. Headwear layer
+  // 5. Headwear layer(s) - may include multiple layers (ears + accessory)
   const headwearName = HEADWEAR_MAP[hat];
   if (config.layers.headwear && config.layers.headwear[headwearName]) {
-    const headwearFile = config.layers.headwear[headwearName];
-    if (headwearFile) {
-      layers.push({ type: 'headwear', src: basePath + headwearFile });
+    const headwearFiles = config.layers.headwear[headwearName];
+    if (Array.isArray(headwearFiles)) {
+      headwearFiles.forEach((file, index) => {
+        if (file) {
+          layers.push({ type: 'headwear-' + index, src: basePath + file });
+        }
+      });
+    } else if (headwearFiles) {
+      // 向后兼容：单个字符串
+      layers.push({ type: 'headwear', src: basePath + headwearFiles });
     }
   }
   
