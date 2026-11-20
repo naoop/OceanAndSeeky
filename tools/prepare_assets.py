@@ -1,13 +1,18 @@
 """Rebuild the local studio's ready-to-display images from the approved drawings."""
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw
+
+# 支持从项目根目录运行
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from prepare_faces import prepare_faces
 
 ROOT = Path(__file__).resolve().parents[1]
-ART = ROOT / "SeekyOcean妆造定稿"
+ART = ROOT / "assets-src" / "makeup" / "SeekyOcean妆造定稿"
+GIF_SRC = ROOT / "assets-src" / "gif"
 DEST = ROOT / "studio-assets"
 ACTORS = ("Ocean", "Seeky")
 ORIGINAL_HEADS = (4, 1, 2, 3, 1, 1)
@@ -65,10 +70,10 @@ def prepare_actor(actor):
 
 
 def prepare_action(key, path, actor, outfit, hat, use_png_frames=False):
-    source = Image.open(ROOT / "gif" / path)
+    source = Image.open(GIF_SRC / path)
     def read_frame(index):
         if use_png_frames:
-            with Image.open((ROOT / "gif" / path).with_name(f"frame_{index+1}.png")) as png:
+            with Image.open((GIF_SRC / path).with_name(f"frame_{index+1}.png")) as png:
                 return cutout(png)
         return cutout(source)
     first = read_frame(0)

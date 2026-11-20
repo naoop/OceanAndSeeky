@@ -113,8 +113,9 @@ def prepare_faces(dest):
         base = Image.open(dest / f"{actor}-4-3.png").convert("RGBA")
         target_x, target_y = (153, 191) if actor == "Ocean" else (155, 194)
         root = Path(__file__).resolve().parents[1]
-        stem = "Ocean" if actor == "Ocean" else "seeky"
-        skins = [clean_skin(base, actor, root / f"{stem}0{i}.jpg") for i in (1,2)]
+        refs_dir = root / "assets-src" / "refs"
+        stem = "ocean" if actor == "Ocean" else "seeky"
+        skins = [clean_skin(base, actor, refs_dir / f"{stem}-ref-0{i}.jpg") for i in (1,2)]
         entries = []
         for key, label, left, right, mouth, mouth_size in faces:
             source = Image.open(dest / f"{key}.png").convert("RGBA")
