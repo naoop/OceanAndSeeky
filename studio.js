@@ -386,4 +386,10 @@ function initializeUI() {
 
 // 初始化
 document.addEventListener('visibilitychange', playback);
-document.addEventListener('DOMContentLoaded', initializeUI);
+
+// 确保在 DOMContentLoaded 或脚本加载后初始化
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeUI);
+} else {
+  initializeUI();
+}
