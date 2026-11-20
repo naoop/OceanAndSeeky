@@ -1,0 +1,102 @@
+{
+  "character": "Seeky",
+  "canvas": [
+    364,
+    498
+  ],
+  "stack": [
+    "face",
+    "features",
+    "hair",
+    "headwear"
+  ],
+  "layers": {
+    "face": "face-default.png",
+    "hair": "hair.png",
+    "headwear": {
+      "default-hair": null,
+      "flower": "headwear-flower.png",
+      "animal-ears": "headwear-ears.png",
+      "peach-hat": "headwear-peach-hat.png"
+    }
+  },
+  "faceShapes": {
+    "default": "face-default.png"
+  },
+  "expressions": {
+    "default": {
+      "label": "默认",
+      "face": "face-default.png",
+      "features": "features-default.png"
+    },
+    "hammer-0": {
+      "label": "平静",
+      "face": "face-default.png",
+      "features": "features-hammer-0.png",
+      "sourcePrefix": "face-hammer-0"
+    },
+    "hammer-1": {
+      "label": "抿嘴笑",
+      "face": "face-default.png",
+      "features": "features-hammer-1.png",
+      "sourcePrefix": "face-hammer-1"
+    },
+    "hammer-2": {
+      "label": "用力",
+      "face": "face-default.png",
+      "features": "features-hammer-2.png",
+      "sourcePrefix": "face-hammer-2"
+    },
+    "hammer-3": {
+      "label": "开心张嘴",
+      "face": "face-default.png",
+      "features": "features-hammer-3.png",
+      "sourcePrefix": "face-hammer-3"
+    },
+    "hammer-4": {
+      "label": "眯眼笑",
+      "face": "face-default.png",
+      "features": "features-hammer-4.png",
+      "sourcePrefix": "face-hammer-4"
+    },
+    "soft-0": {
+      "label": "认真",
+      "face": "face-default.png",
+      "features": "features-soft-0.png",
+      "sourcePrefix": "face-soft-0"
+    },
+    "soft-1": {
+      "label": "歪头微笑",
+      "face": "face-default.png",
+      "features": "features-soft-1.png",
+      "sourcePrefix": "face-soft-1"
+    },
+    "soft-2": {
+      "label": "轻笑",
+      "face": "face-default.png",
+      "features": "features-soft-2.png",
+      "sourcePrefix": "face-soft-2"
+    },
+    "soft-3": {
+      "label": "闭眼微笑",
+      "face": "face-default.png",
+      "features": "features-soft-3.png",
+      "sourcePrefix": "face-soft-3"
+    }
+  },
+  "master": {
+    "canvas": [
+      1024,
+      1024
+    ],
+    "dir": "master/",
+    "toSprite": {
+      "scale": 0.30800000000000005,
+      "offset": [
+        22,
+        37
+      ],
+      "note": "sprite_xy = master_xy*scale + offset; downscale = palette-quantize then per-pixel majority colour (pixel-art friendly)"
+    }
+  }
+}
