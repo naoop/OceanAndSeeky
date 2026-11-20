@@ -5,7 +5,7 @@
       "label": "做鬼脸",
       "actor": "Ocean",
       "source_path": "做鬼脸/grimace_Ocean.gif",
-      "use_png_frames": false,
+      "use_png_frames": true,
       "outfit": 4,
       "hat": 3,
       "durations": [500, 250, 200, 800, 500, 400]
@@ -25,7 +25,7 @@
       "label": "挥锤子",
       "actor": "Seeky",
       "source_path": "挥锤子_第一版/hammer_seeky.gif",
-      "use_png_frames": false,
+      "use_png_frames": true,
       "outfit": 4,
       "hat": 3,
       "durations": [500, 350, 120, 500, 600]
@@ -35,7 +35,7 @@
       "label": "轻挥小锤",
       "actor": "Seeky",
       "source_path": "轻挥小锤子_第二版/soft_hammer.gif",
-      "use_png_frames": false,
+      "use_png_frames": true,
       "outfit": 4,
       "hat": 3,
       "durations": [500, 500, 200, 600, 300],
