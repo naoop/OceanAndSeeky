@@ -1,0 +1,200 @@
+{
+ "Ocean/face-default.png": {
+  "px": 14490,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 1,
+  "face_nonskin_inner_px": 174
+ },
+ "Ocean/features-default.png": {
+  "px": 1621,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Ocean/features-grimace-0.png": {
+  "px": 1676,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 10
+ },
+ "Ocean/features-grimace-1.png": {
+  "px": 1777,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 9,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Ocean/features-grimace-2.png": {
+  "px": 1850,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Ocean/features-grimace-3.png": {
+  "px": 1928,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 9
+ },
+ "Ocean/features-grimace-4.png": {
+  "px": 1514,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 9,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Ocean/features-ocean-hammer-1.png": {
+  "px": 1930,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 5
+ },
+ "Ocean/features-ocean-hammer-2.png": {
+  "px": 1414,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 8
+ },
+ "Ocean/features-ocean-hammer-3.png": {
+  "px": 1882,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 8
+ },
+ "Ocean/features-ocean-hammer-4.png": {
+  "px": 919,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 5
+ },
+ "Ocean/hair.png": {
+  "px": 14337,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8
+ },
+ "Ocean/headwear-ears.png": {
+  "px": 3712,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 3
+ },
+ "Seeky/face-default.png": {
+  "px": 13670,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 1,
+  "face_nonskin_inner_px": 115
+ },
+ "Seeky/features-default.png": {
+  "px": 1255,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 5,
+  "outside_face_px": 0,
+  "dark_components": 5
+ },
+ "Seeky/features-hammer-0.png": {
+  "px": 1322,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 6,
+  "outside_face_px": 0,
+  "dark_components": 7
+ },
+ "Seeky/features-hammer-1.png": {
+  "px": 1496,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 12
+ },
+ "Seeky/features-hammer-2.png": {
+  "px": 920,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 8,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Seeky/features-hammer-3.png": {
+  "px": 1439,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 5,
+  "outside_face_px": 0,
+  "dark_components": 7
+ },
+ "Seeky/features-hammer-4.png": {
+  "px": 798,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 5
+ },
+ "Seeky/features-soft-0.png": {
+  "px": 1336,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Seeky/features-soft-1.png": {
+  "px": 1314,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 8
+ },
+ "Seeky/features-soft-2.png": {
+  "px": 1388,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 7,
+  "outside_face_px": 0,
+  "dark_components": 7
+ },
+ "Seeky/features-soft-3.png": {
+  "px": 687,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 6,
+  "outside_face_px": 0,
+  "dark_components": 6
+ },
+ "Seeky/hair.png": {
+  "px": 14286,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 1
+ },
+ "Seeky/headwear-ears.png": {
+  "px": 9433,
+  "green_px": 0,
+  "specks<=2px": 0,
+  "components": 2
+ }
+}
